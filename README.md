@@ -1,9 +1,9 @@
 <div align="center">
 
 <h1>ASHIF RZA</h1>
-<h3>Full-Stack Developer & AI Engineer</h3>
+<h3>Full-Stack Developer </h3>
 <p>
-  Building production-grade applications with React · Node.js · Python · MongoDB · Flask
+  Building production-grade applications with React · Node.js · Python · MongoDB · Flask 
 </p>
 
 <p>
@@ -138,7 +138,7 @@ Live webcam-based system that detects and classifies human emotions in real-time
 
 ---
 
-## GitHub Stats
+## GitHub Stats.
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ASHIFRZA18&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="170"/>
