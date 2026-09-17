@@ -3,7 +3,7 @@
 <h1>ASHIF RZA</h1>
 <h3>Full-Stack Developer </h3>
 <p>
-  Building production-grade applications with React · Node.js · Python · MongoDB · Flask 
+  Building production-grade applications with React · Node.js · javascript · MongoDB · Flask 
 </p>
 
 <p>
