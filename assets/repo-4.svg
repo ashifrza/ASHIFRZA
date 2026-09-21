@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="465" height="184" viewBox="0 0 465 184" role="img"><title>VideoWithAi: A Next.js project. TypeScript. 0 stars, 0 forks. Updated 2026-02-05.</title><style>@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect x=".5" y=".5" width="464" height="183" rx="18" fill="#0a1120" stroke="#263650"/>
+<text x="22" y="30" font-family="Consolas,monospace" font-size="9" fill="#af98ff" >REPO / 04</text>
+<text x="439" y="30" font-family="Consolas,monospace" font-size="19" fill="#62e7ff" text-anchor="end">↗</text>
+<text x="22" y="64" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#edf5ff" font-weight="bold">VideoWithAi</text>
+<text x="22" y="95" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#98abc6" >A Next.js project.</text>
+<text x="22" y="117" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#98abc6" >TypeScript across the application.</text>
+<path d="M22 135H443" stroke="#263650"/>
+<text x="22" y="160" font-family="Consolas,monospace" font-size="10" fill="#62e7ff" >TypeScript</text>
+<text x="183" y="160" font-family="Consolas,monospace" font-size="9" fill="#98abc6" >STARS 0 / FORKS 0</text>
+<text x="443" y="160" font-family="Consolas,monospace" font-size="9" fill="#98abc6" text-anchor="end">2026-02-05</text>
+</svg>

@@ -1,0 +1,42 @@
+name: Publish Commit Dash
+on:
+  push:
+    branches: [main]
+    paths: ['game/**', '.github/workflows/publish-arcade.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: publish-arcade
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          path: source
+      - name: Test game logic
+        run: node source/scripts/test-game.mjs
+      - uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          path: published
+      - name: Publish tested game files
+        run: |
+          rsync -a --delete --exclude=.git source/game/ published/
+          touch published/.nojekyll
+          cd published
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Publish Commit Dash'
+          git push origin HEAD:gh-pages
+      - name: Request Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/${{ github.repository }}/pages/builds

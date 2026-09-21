@@ -1,0 +1,116 @@
+{
+  "as_of": "2026-09-21",
+  "username": "ashifrza",
+  "bio": "Full-Stack Dev & AI Engineer | React \u00b7 Node.js \u00b7 Python | Building HireEdge \ud83d\ude80 | Open to roles in Bengaluru & Remote.",
+  "followers": 1,
+  "following": 3,
+  "public_repos": 8,
+  "stars": 0,
+  "forks": 0,
+  "repos": [
+    {
+      "name": "ASHIFRZA",
+      "description": null,
+      "html_url": "https://github.com/ashifrza/ASHIFRZA",
+      "homepage": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-21T04:34:51Z"
+    },
+    {
+      "name": "Emotion_Detection",
+      "description": null,
+      "html_url": "https://github.com/ashifrza/Emotion_Detection",
+      "homepage": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-19T14:13:42Z"
+    },
+    {
+      "name": "Keystro",
+      "description": "Ai-powered Typing...",
+      "html_url": "https://github.com/ashifrza/Keystro",
+      "homepage": "https://keystro-gamma.vercel.app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-12T04:09:29Z"
+    },
+    {
+      "name": "gushwork-landing",
+      "description": "A landing Page.",
+      "html_url": "https://github.com/ashifrza/gushwork-landing",
+      "homepage": "https://gushwork-landing.vercel.app",
+      "language": "CSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-12T04:08:28Z"
+    },
+    {
+      "name": "Only-Html-Css-Js-Projects",
+      "description": null,
+      "html_url": "https://github.com/ashifrza/Only-Html-Css-Js-Projects",
+      "homepage": null,
+      "language": "CSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-11T04:42:02Z"
+    },
+    {
+      "name": "Clientora",
+      "description": "A Customer Relationship Managements System.",
+      "html_url": "https://github.com/ashifrza/Clientora",
+      "homepage": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-10T04:38:17Z"
+    },
+    {
+      "name": "transformer-maintenance-guide",
+      "description": "Practical transformer maintenance guide for technicians and beginners",
+      "html_url": "https://github.com/ashifrza/transformer-maintenance-guide",
+      "homepage": "",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-04-05T20:16:53Z"
+    },
+    {
+      "name": "VideoWithAi",
+      "description": "A full Next.js Project",
+      "html_url": "https://github.com/ashifrza/VideoWithAi",
+      "homepage": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-02-05T15:33:19Z"
+    }
+  ],
+  "language_bytes": {
+    "TypeScript": 352495,
+    "JavaScript": 191294,
+    "CSS": 99548,
+    "HTML": 26250,
+    "Python": 8131,
+    "Dockerfile": 1263
+  }
+}

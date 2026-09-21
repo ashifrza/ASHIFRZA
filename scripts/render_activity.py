@@ -1,7 +1,10 @@
 """Render actual contribution counts in the SIGNAL design language."""
 from datetime import date, timedelta
 import json
-from make_showcase import ROOT, frame, text, write, INK, MUTED, LINE, LIME, PURPLE, SANS
+from build_dashboard import ROOT, frame as base_frame, t as text, save as write, INK, MUTED, LINE, CYAN as LIME, VIOLET as PURPLE, SANS
+
+def frame(height, title, description):
+    return base_frame(960, height, title + ". " + description)
 
 
 def main():
@@ -16,7 +19,7 @@ def main():
     origin=first-timedelta(days=(first.weekday()+1)%7)
     weeks=((date.fromisoformat(days[-1]['date'])-origin).days//7)+1
     step=868/weeks
-    palette=['#1d222b','#38432c','#657d36','#a3c94c',LIME]
+    palette=['#1b273b','#164658','#20728a','#3ca9c2',LIME]
     for day in days:
         dt=date.fromisoformat(day['date'])
         col,row=divmod((dt-origin).days,7)
@@ -30,7 +33,7 @@ def main():
     for i,color in enumerate(palette):
         p.append(f'<rect x="{794+i*17}" y="308" width="12" height="12" rx="2" fill="{color}"/>')
     p.append(text(889,318,'MORE',8,MUTED))
-    write(p,'contrib-heatmap.svg')
+    write(p,'contributions.svg')
 
 
 if __name__=='__main__':

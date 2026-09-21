@@ -1,45 +1,42 @@
-# SIGNAL profile maintenance
+# Developer dashboard maintenance
 
-The profile uses self-contained SVG images, original typography/layout and vector ASCII portrait data. There are no fonts, images, scripts, widgets, or statistics services loaded from third-party servers. The initial ASCII/contribution concept was inspired by the supplied Avi Vashishta guide; SIGNAL is an independently designed upgrade.
+This README is a GitHub-native developer dashboard, not a replacement for ashifrza.in. It uses animated SVG panels, repository links, an expandable About section, local technology logos and a game launcher. No portrait is displayed.
 
-## Publish and update
+## Data and content
 
-Merge the accompanying pull request into main to apply this design. The Actions workflow runs when rendering scripts/configuration change, around 06:17 UTC (11:47 IST) daily, and via Actions > Update profile art > Run workflow. GitHub can delay schedules or disable them on inactive repositories. Fetching needs no personal token; the workflow commits with the automatic GITHUB_TOKEN and contents: write. Failed parsing preserves the previous committed assets.
+scripts/fetch_github.py reads public GitHub REST endpoints for repositories, stars, forks, followers and repository language bytes. It paginates the repository list. Language totals exclude forks and the profile repository; they are source-code shares, not proficiency ratings. A failed fetch leaves the previous complete snapshot intact. The standard-library scripts need no personal access token; Actions supplies its automatic token to avoid the anonymous API limit.
 
-## Design and content
+scripts/fetch_contributions.py reads GitHub's public contribution calendar. It validates every day and count before replacing the last good snapshot. Streaks are limited to the displayed calendar, with the current unfinished day allowed to have zero contributions.
 
-- hero.svg shows the identity, role, animated ASCII portrait, scan line and orbit paths.
-- systems.svg presents the frontend, backend and AI/data stack with moving connector signals.
-- contrib-heatmap.svg contains actual public contribution counts and window-limited streaks.
-- link-*.svg are local clickable link labels, wrapped in README anchors.
+About/experience content is drawn from the supplied resume. HireEdge and openness to roles come from the public GitHub bio at the time of this redesign. These editorial statements are maintained in scripts/build_dashboard.py and README.md; the numeric repository data refreshes daily.
 
-Edit profile.json for the role. The hero name, editorial copy, colors, stack and project labels live in scripts/make_showcase.py. The original info-card files remain available for reverting to the first design but are not used by this README.
+The Profile views badge is the external Komarev badge-load counter. It is not GitHub's official analytics, a count of unique people, or an all-time reconstructed total. Proxies, caches, bots and repeated loads can affect it. All other profile art and logos are local files.
 
-```sh
-python scripts/make_showcase.py
-python scripts/render_heatmap_svg.py
-```
-
-Motion uses CSS inside SVGs. Entrances play once; orbital, scan and signal details loop slowly. Set STATIC=1 to generate motionless output. The reduced-motion media query disables all animations and hides scan/signal effects. Content remains visible if animation is unsupported. Browser, GitHub image cache and OS settings can affect playback. Detailed labels scale down with the SVG on small screens; README images include descriptive alternative text.
-
-## Portrait
-
-The original photograph and resume are not stored in the repository. data/portrait.json contains only the cropped ASCII character grid used by the renderer. To change it:
+## Edit and regenerate
 
 ```sh
-python -m pip install -r scripts/requirements-portrait.txt
-python scripts/prepare_portrait.py /path/to/photo.jpeg
-python scripts/make_showcase.py
-```
-
-The default crop and red-background mask are tuned to the supplied illustrated portrait. Use --background blue for a blue backdrop or --background none for an already isolated image. Use --crop LEFT TOP RIGHT BOTTOM with fractions between 0 and 1 to change framing. Daily rendering uses only the Python standard library; image packages are only needed to replace portrait data.
-
-## Calendar
-
-```sh
-python -m unittest discover -s scripts -p 'test_*.py'
+python scripts/fetch_github.py
 python scripts/fetch_contributions.py
-python scripts/render_heatmap_svg.py
+python scripts/build_dashboard.py
+python scripts/render_activity.py
+python -m unittest discover -s scripts -p 'test_*.py'
+node scripts/test-game.mjs
 ```
 
-The undocumented public GitHub HTML calendar may change. Counts come from tooltips, not color levels. Current streak permits an unfinished zero-contribution day; longest streak covers only the displayed rolling window. Private activity appears only when exposed in the public calendar. The displayed UTC sync date helps identify cached images.
+The main-branch workflow refreshes around 06:17 UTC daily and can be run manually. GitHub may delay schedules or disable them for inactive public repositories. SVGs show their snapshot date. STATIC=1 disables generated animations; reduced-motion preferences also disable SVG animation. README SVGs cannot run JavaScript, accept game controls or load interactive 3D scenes.
+
+## Commit Dash
+
+The playable game lives in game/ and is published separately on the repository's gh-pages branch at https://ashifrza.github.io/ASHIFRZA/. Only the game is hosted; it contains no portfolio pages. Controls: arrow keys or A/D, left/right buttons, or a horizontal swipe. Space pauses/resumes, Escape toggles pause, and losing focus pauses the game. Runs last 45 seconds with three health points. Five consecutive pickups enable double points. Best scores stay in localStorage; no analytics or leaderboard server is used by the game.
+
+Run locally with any static HTTP server; ES modules do not run reliably from file:// URLs:
+
+```sh
+python -m http.server 8000 --directory game
+```
+
+After editing the game, publish those files to the gh-pages branch. The publish-arcade workflow automates this when game files are merged to main. GitHub Pages must use the gh-pages branch, root folder. The profile's daily data workflow does not modify the game.
+
+## Assets
+
+Technology logos are from Devicon (https://github.com/devicons/devicon), distributed with its MIT license in assets/logos/LICENSE. Technology names and marks belong to their respective owners. Portrait assets and their generators have been removed from this version; earlier versions remain in Git history.
