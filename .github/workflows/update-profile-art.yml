@@ -9,6 +9,7 @@ on:
     paths:
       - 'scripts/**'
       - 'profile.json'
+      - 'assets/logos/**'
       - '.github/workflows/update-profile-art.yml'
 
 permissions:
@@ -33,15 +34,19 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_*.py'
       - name: Fetch real contributions
         run: python scripts/fetch_contributions.py
+      - name: Fetch public repository facts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/fetch_github.py
       - name: Render profile cards
         run: |
-          python scripts/render_heatmap_svg.py
-          python scripts/make_info_card.py
+          python scripts/build_dashboard.py
+          python scripts/render_activity.py
       - name: Commit changed artwork
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/contributions.json contrib-heatmap.svg info-card.svg
+          git add data/contributions.json data/github.json assets/*.svg
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'chore: refresh profile art [skip ci]'
           git pull --rebase origin main

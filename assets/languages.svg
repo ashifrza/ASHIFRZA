@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" role="img"><title>Public repository language composition by GitHub language bytes, excluding forks and this profile repository. This is code composition, not a proficiency score.</title><style>@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect x=".5" y=".5" width="959" height="219" rx="18" fill="#0a1120" stroke="#263650"/>
+<text x="30" y="32" font-family="Consolas,monospace" font-size="10" fill="#62e7ff" >03</text>
+<text x="65" y="32" font-family="Consolas,monospace" font-size="10" fill="#98abc6" >REPOSITORY SIGNAL / PUBLIC GITHUB DATA</text>
+<path d="M30 47H930" stroke="#263650"/>
+<text x="30" y="82" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#edf5ff" font-weight="bold">What the codebase says.</text>
+<text x="930" y="79" font-family="Consolas,monospace" font-size="9" fill="#98abc6" text-anchor="end">SYNC 2026-09-21 UTC</text>
+<rect x="30.00" y="108" width="467.24" height="15" fill="#62e7ff"/>
+<rect x="497.24" y="108" width="253.56" height="15" fill="#af98ff"/>
+<rect x="750.80" y="108" width="131.95" height="15" fill="#ffbc7a"/>
+<rect x="882.75" y="108" width="34.79" height="15" fill="#89edbc"/>
+<rect x="917.55" y="108" width="10.78" height="15" fill="#f188bd"/>
+<rect x="928.33" y="108" width="1.67" height="15" fill="#7389ad"/>
+<circle cx="33" cy="149" r="3" fill="#62e7ff"/>
+<text x="45" y="153" font-family="Consolas,monospace" font-size="11" fill="#98abc6" >TypeScript  51.9%</text>
+<circle cx="336" cy="149" r="3" fill="#af98ff"/>
+<text x="348" y="153" font-family="Consolas,monospace" font-size="11" fill="#98abc6" >JavaScript  28.2%</text>
+<circle cx="639" cy="149" r="3" fill="#ffbc7a"/>
+<text x="651" y="153" font-family="Consolas,monospace" font-size="11" fill="#98abc6" >CSS  14.7%</text>
+<circle cx="33" cy="174" r="3" fill="#89edbc"/>
+<text x="45" y="178" font-family="Consolas,monospace" font-size="11" fill="#98abc6" >HTML  3.9%</text>
+<circle cx="336" cy="174" r="3" fill="#f188bd"/>
+<text x="348" y="178" font-family="Consolas,monospace" font-size="11" fill="#98abc6" >Python  1.2%</text>
+<circle cx="639" cy="174" r="3" fill="#7389ad"/>
+<text x="651" y="178" font-family="Consolas,monospace" font-size="11" fill="#98abc6" >Dockerfile  0.2%</text>
+<text x="30" y="205" font-family="Consolas,monospace" font-size="9" fill="#98abc6" >Language bytes across non-fork public projects; excludes this profile. Not a skill rating.</text>
+</svg>

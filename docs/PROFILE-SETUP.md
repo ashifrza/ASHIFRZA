@@ -1,42 +1,42 @@
-# Profile maintenance
+# Developer dashboard maintenance
 
-This profile follows the terminal / ASCII / contribution-calendar concept described in the supplied guide by Avi Vashishta (https://github.com/AVIVASHISHTA29). Its scripts are independently implemented for Ashif Rza.
+This README is a GitHub-native developer dashboard, not a replacement for ashifrza.in. It uses animated SVG panels, repository links, an expandable About section, local technology logos and a game launcher. No portrait is displayed.
 
-## Publish
+## Data and content
 
-Merge the accompanying pull request into main. The README in ashifrza/ASHIFRZA is the profile README. The workflow runs on merge when its scripts/configuration change, every day around 06:17 UTC (11:47 IST), and manually from Actions > Update profile art > Run workflow. GitHub may delay scheduled jobs and can disable schedules on inactive public repositories.
+scripts/fetch_github.py reads public GitHub REST endpoints for repositories, stars, forks, followers and repository language bytes. It paginates the repository list. Language totals exclude forks and the profile repository; they are source-code shares, not proficiency ratings. A failed fetch leaves the previous complete snapshot intact. The standard-library scripts need no personal access token; Actions supplies its automatic token to avoid the anonymous API limit.
 
-No personal access token or repository secret is needed. Fetching uses GitHub's public HTML; committing uses GitHub Actions' automatic GITHUB_TOKEN with contents: write. Repository rules or disabled Actions may require owner configuration. The public calendar format is undocumented and may change. Parsing failures stop the job and preserve the previous committed artwork instead of publishing fabricated zeroes.
+scripts/fetch_contributions.py reads GitHub's public contribution calendar. It validates every day and count before replacing the last good snapshot. Streaks are limited to the displayed calendar, with the current unfinished day allowed to have zero contributions.
 
-## Edit the info card
+About/experience content is drawn from the supplied resume. HireEdge and openness to roles come from the public GitHub bio at the time of this redesign. These editorial statements are maintained in scripts/build_dashboard.py and README.md; the numeric repository data refreshes daily.
 
-Edit profile.json, then run:
+The Profile views badge is the external Komarev badge-load counter. It is not GitHub's official analytics, a count of unique people, or an all-time reconstructed total. Proxies, caches, bots and repeated loads can affect it. All other profile art and logos are local files.
 
-```sh
-python scripts/make_info_card.py
-```
-
-The rows come from the provided resume. The role and account name follow the user's explicit request. The original resume and photograph are not published. Edit or shorten rows if content would exceed the fixed card width.
-
-## Update the portrait
-
-Only portrait generation needs extra packages:
+## Edit and regenerate
 
 ```sh
-python -m pip install -r scripts/requirements-portrait.txt
-python scripts/make_ascii_svg.py /path/to/photo.jpeg
-```
-
-The default mask is tuned to the supplied blue background. For another background, isolate the portrait onto white first and use --keep-background. The resulting SVG is self-contained vector text; it does not embed the original photograph. All three cards support STATIC=1 for motionless generation and a reduced-motion preference. Animation plays once. Without animation support, the complete card remains visible.
-
-## Refresh contributions locally
-
-Python 3.12 or later is recommended. The daily scripts use only the standard library.
-
-```sh
-python -m unittest discover -s scripts -p 'test_*.py'
+python scripts/fetch_github.py
 python scripts/fetch_contributions.py
-python scripts/render_heatmap_svg.py
+python scripts/build_dashboard.py
+python scripts/render_activity.py
+python -m unittest discover -s scripts -p 'test_*.py'
+node scripts/test-game.mjs
 ```
 
-Counts are parsed from GitHub's tooltips, not inferred from color intensity. The calendar uses GitHub's rolling public window, with UTC fetch dates. Current streak allows today's count to be zero while yesterday's streak remains active. Longest streak is limited to the displayed window, not all-time. Private activity depends on what the account exposes publicly. The SVG includes its data date because GitHub's image cache can delay visible refreshes.
+The main-branch workflow refreshes around 06:17 UTC daily and can be run manually. GitHub may delay schedules or disable them for inactive public repositories. SVGs show their snapshot date. STATIC=1 disables generated animations; reduced-motion preferences also disable SVG animation. README SVGs cannot run JavaScript, accept game controls or load interactive 3D scenes.
+
+## Commit Dash
+
+The playable game lives in game/ and is published separately on the repository's gh-pages branch at https://ashifrza.github.io/ASHIFRZA/. Only the game is hosted; it contains no portfolio pages. Controls: arrow keys or A/D, left/right buttons, or a horizontal swipe. Space pauses/resumes, Escape toggles pause, and losing focus pauses the game. Runs last 45 seconds with three health points. Five consecutive pickups enable double points. Best scores stay in localStorage; no analytics or leaderboard server is used by the game.
+
+Run locally with any static HTTP server; ES modules do not run reliably from file:// URLs:
+
+```sh
+python -m http.server 8000 --directory game
+```
+
+After editing the game, publish those files to the gh-pages branch. The publish-arcade workflow automates this when game files are merged to main. GitHub Pages must use the gh-pages branch, root folder. The profile's daily data workflow does not modify the game.
+
+## Assets
+
+Technology logos are from Devicon (https://github.com/devicons/devicon), distributed with its MIT license in assets/logos/LICENSE. Technology names and marks belong to their respective owners. Portrait assets and their generators have been removed from this version; earlier versions remain in Git history.
