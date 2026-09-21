@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="408" viewBox="0 0 490 408" role="img" aria-labelledby="title desc">
+<title id="title">ASHIF RZA info card</title><desc id="desc">Now Building full-stack web apps; Prev Frontend Intern @ Syntechxhub;  Nov - Dec 2025; Stack React / Next.js / TypeScript;  Node.js / Express / Flask;  MongoDB / MySQL / Tailwind; Builds AI stock prediction;  Image generation + classification; Study B.Sc. Mathematics; Web ashifrza.in</desc>
+<style>@media(prefers-reduced-motion:reduce){.reveal{animation:none!important}.wipe{clip-path:none!important}.cursor{display:none!important}}
+@keyframes enter{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+</style>
+<rect x=".5" y=".5" width="489" height="407" rx="12" fill="#0d1117" stroke="#30363d"/>
+<text x="24" y="30" fill="#8b949e" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >ashifrza@github: ~</text>
+<path d="M0 47H490" stroke="#21262d"/>
+<text x="24" y="82" fill="#e6edf3" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="23" >ASHIF RZA</text>
+<text x="24" y="106" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="13" >Fullstack Developer</text>
+<text x="24" y="127" fill="#30363d" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="12" >---------------------------------------</text>
+<g class="reveal" style="animation:enter .38s ease-out 0.300s both">
+<text x="24" y="153" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Now</text>
+<text x="105" y="153" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Building full-stack web apps</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 0.410s both">
+<text x="24" y="175" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Prev</text>
+<text x="105" y="175" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Frontend Intern @ Syntechxhub</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 0.520s both">
+<text x="24" y="197" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" ></text>
+<text x="105" y="197" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Nov - Dec 2025</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 0.630s both">
+<text x="24" y="219" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Stack</text>
+<text x="105" y="219" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >React / Next.js / TypeScript</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 0.740s both">
+<text x="24" y="241" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" ></text>
+<text x="105" y="241" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Node.js / Express / Flask</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 0.850s both">
+<text x="24" y="263" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" ></text>
+<text x="105" y="263" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >MongoDB / MySQL / Tailwind</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 0.960s both">
+<text x="24" y="285" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Builds</text>
+<text x="105" y="285" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >AI stock prediction</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 1.070s both">
+<text x="24" y="307" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" ></text>
+<text x="105" y="307" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Image generation + classification</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 1.180s both">
+<text x="24" y="329" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Study</text>
+<text x="105" y="329" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >B.Sc. Mathematics</text>
+</g>
+<g class="reveal" style="animation:enter .38s ease-out 1.290s both">
+<text x="24" y="351" fill="#39d353" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >Web</text>
+<text x="105" y="351" fill="#c9d1d9" font-family="'Cascadia Mono','DejaVu Sans Mono',Consolas,monospace" font-size="11" >ashifrza.in</text>
+</g>
+<rect x="24" y="375" width="23" height="10" fill="#21262d"/>
+<rect x="47" y="375" width="23" height="10" fill="#0e4429"/>
+<rect x="70" y="375" width="23" height="10" fill="#006d32"/>
+<rect x="93" y="375" width="23" height="10" fill="#26a641"/>
+<rect x="116" y="375" width="23" height="10" fill="#39d353"/>
+<rect x="139" y="375" width="23" height="10" fill="#c9d1d9"/>
+<rect x="162" y="375" width="23" height="10" fill="#e6edf3"/>
+</svg>
