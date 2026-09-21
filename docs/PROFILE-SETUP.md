@@ -1,37 +1,40 @@
-# Profile maintenance
+# SIGNAL profile maintenance
 
-This profile follows the terminal / ASCII / contribution-calendar concept described in the supplied guide by Avi Vashishta (https://github.com/AVIVASHISHTA29). Its scripts are independently implemented for Ashif Rza.
+The profile uses self-contained SVG images, original typography/layout and vector ASCII portrait data. There are no fonts, images, scripts, widgets, or statistics services loaded from third-party servers. The initial ASCII/contribution concept was inspired by the supplied Avi Vashishta guide; SIGNAL is an independently designed upgrade.
 
-## Publish
+## Publish and update
 
-Merge the accompanying pull request into main. The README in ashifrza/ASHIFRZA is the profile README. The workflow runs on merge when its scripts/configuration change, every day around 06:17 UTC (11:47 IST), and manually from Actions > Update profile art > Run workflow. GitHub may delay scheduled jobs and can disable schedules on inactive public repositories.
+Merge the accompanying pull request into main to apply this design. The Actions workflow runs when rendering scripts/configuration change, around 06:17 UTC (11:47 IST) daily, and via Actions > Update profile art > Run workflow. GitHub can delay schedules or disable them on inactive repositories. Fetching needs no personal token; the workflow commits with the automatic GITHUB_TOKEN and contents: write. Failed parsing preserves the previous committed assets.
 
-No personal access token or repository secret is needed. Fetching uses GitHub's public HTML; committing uses GitHub Actions' automatic GITHUB_TOKEN with contents: write. Repository rules or disabled Actions may require owner configuration. The public calendar format is undocumented and may change. Parsing failures stop the job and preserve the previous committed artwork instead of publishing fabricated zeroes.
+## Design and content
 
-## Edit the info card
+- hero.svg shows the identity, role, animated ASCII portrait, scan line and orbit paths.
+- systems.svg presents the frontend, backend and AI/data stack with moving connector signals.
+- contrib-heatmap.svg contains actual public contribution counts and window-limited streaks.
+- link-*.svg are local clickable link labels, wrapped in README anchors.
 
-Edit profile.json, then run:
+Edit profile.json for the role. The hero name, editorial copy, colors, stack and project labels live in scripts/make_showcase.py. The original info-card files remain available for reverting to the first design but are not used by this README.
 
 ```sh
-python scripts/make_info_card.py
+python scripts/make_showcase.py
+python scripts/render_heatmap_svg.py
 ```
 
-The rows come from the provided resume. The role and account name follow the user's explicit request. The original resume and photograph are not published. Edit or shorten rows if content would exceed the fixed card width.
+Motion uses CSS inside SVGs. Entrances play once; orbital, scan and signal details loop slowly. Set STATIC=1 to generate motionless output. The reduced-motion media query disables all animations and hides scan/signal effects. Content remains visible if animation is unsupported. Browser, GitHub image cache and OS settings can affect playback. Detailed labels scale down with the SVG on small screens; README images include descriptive alternative text.
 
-## Update the portrait
+## Portrait
 
-Only portrait generation needs extra packages:
+The original photograph and resume are not stored in the repository. data/portrait.json contains only the cropped ASCII character grid used by the renderer. To change it:
 
 ```sh
 python -m pip install -r scripts/requirements-portrait.txt
-python scripts/make_ascii_svg.py /path/to/photo.jpeg
+python scripts/prepare_portrait.py /path/to/photo.jpeg
+python scripts/make_showcase.py
 ```
 
-The default mask is tuned to the supplied blue background. For another background, isolate the portrait onto white first and use --keep-background. The resulting SVG is self-contained vector text; it does not embed the original photograph. All three cards support STATIC=1 for motionless generation and a reduced-motion preference. Animation plays once. Without animation support, the complete card remains visible.
+The default crop and blue-background mask are tuned to the supplied headshot. Use --crop LEFT TOP RIGHT BOTTOM with fractions between 0 and 1 to change framing. Daily rendering uses only the Python standard library; image packages are only needed to replace portrait data.
 
-## Refresh contributions locally
-
-Python 3.12 or later is recommended. The daily scripts use only the standard library.
+## Calendar
 
 ```sh
 python -m unittest discover -s scripts -p 'test_*.py'
@@ -39,4 +42,4 @@ python scripts/fetch_contributions.py
 python scripts/render_heatmap_svg.py
 ```
 
-Counts are parsed from GitHub's tooltips, not inferred from color intensity. The calendar uses GitHub's rolling public window, with UTC fetch dates. Current streak allows today's count to be zero while yesterday's streak remains active. Longest streak is limited to the displayed window, not all-time. Private activity depends on what the account exposes publicly. The SVG includes its data date because GitHub's image cache can delay visible refreshes.
+The undocumented public GitHub HTML calendar may change. Counts come from tooltips, not color levels. Current streak permits an unfinished zero-contribution day; longest streak covers only the displayed rolling window. Private activity appears only when exposed in the public calendar. The displayed UTC sync date helps identify cached images.

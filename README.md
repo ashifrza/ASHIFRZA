@@ -1,26 +1,25 @@
 <div align="center">
 
-<h3><code>ashifrza@github ~ $ ./contributions.sh</code></h3>
-<img src="./contrib-heatmap.svg" width="860" alt="Ashif's real GitHub contribution calendar, refreshed daily" />
+<img src="./hero.svg" width="960" alt="ASHIF RZA. Fullstack Developer. Interfaces with intent. APIs with purpose. AI in the mix. Animated ASCII portrait." />
 
 <br><br>
 
-<h3><code>ashifrza@github ~ $ whoami</code></h3>
-<table>
-  <tr>
-    <td valign="top"><img src="./ashif-ascii.svg" width="370" alt="ASHIF RZA, animated ASCII portrait" /></td>
-    <td valign="top"><img src="./info-card.svg" width="490" alt="ASHIF RZA | Fullstack Developer | React, Next.js, Node.js, Express, Flask, MongoDB, MySQL | Former Frontend Intern at Syntechxhub | B.Sc. Mathematics" /></td>
-  </tr>
-</table>
+<img src="./systems.svg" width="960" alt="From interface to intelligence: React, Next.js, TypeScript, Tailwind; Node.js, Express, Flask; MongoDB, MySQL and AI APIs. Projects: AI stock prediction and image generation and classification." />
 
-<br>
+<br><br>
 
-<h3><code>ashifrza@github ~ $ ./links.sh</code></h3>
-<p>
-  <a href="https://www.ashifrza.in/">Portfolio</a> &nbsp;&middot;&nbsp;
-  <a href="https://www.linkedin.com/in/ashifrza/">LinkedIn</a> &nbsp;&middot;&nbsp;
-  <a href="mailto:ashifrza18@gmail.com">Email</a>
-</p>
-<p><samp>React interfaces. Node.js APIs. AI-powered applications.</samp></p>
+<img src="./contrib-heatmap.svg" width="960" alt="Ashif's actual GitHub contributions and streaks, automatically refreshed daily." />
+
+<br><br>
+
+<a href="https://www.ashifrza.in/"><img src="./link-portfolio.svg" width="220" alt="Explore my portfolio" /></a>
+&nbsp;
+<a href="https://www.linkedin.com/in/ashifrza/"><img src="./link-linkedin.svg" width="220" alt="Connect on LinkedIn" /></a>
+&nbsp;
+<a href="mailto:ashifrza18@gmail.com"><img src="./link-email.svg" width="220" alt="Send me an email" /></a>
+
+<br><br>
+
+<samp>ASHIF RZA &nbsp;/&nbsp; MADE OF CURIOSITY &amp; CODE.</samp>
 
 </div>
