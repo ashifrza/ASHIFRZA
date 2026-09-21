@@ -1,4 +1,4 @@
-"""Create reusable ASCII portrait data from a blue-background headshot."""
+"""Create reusable ASCII portrait data from a red- or blue-background headshot."""
 import argparse
 import json
 from pathlib import Path
@@ -7,7 +7,8 @@ from PIL import Image, ImageOps, ImageEnhance
 
 parser=argparse.ArgumentParser()
 parser.add_argument('photo',help='Local headshot; the original is never copied into the repository')
-parser.add_argument('--crop',type=float,nargs=4,default=[.2814,.0259,.713,.5509],metavar=('LEFT','TOP','RIGHT','BOTTOM'),help='Crop as fractions of source width and height')
+parser.add_argument('--crop',type=float,nargs=4,default=[.1442,.0657,.8365,.9662],metavar=('LEFT','TOP','RIGHT','BOTTOM'),help='Crop as fractions of source width and height')
+parser.add_argument('--background',choices=['red','blue','none'],default='red',help='Background color to remove before ASCII conversion')
 args=parser.parse_args()
 photo=ImageOps.exif_transpose(Image.open(args.photo)).convert('RGB')
 w,h=photo.size
@@ -17,7 +18,10 @@ if not (0<=left<right<=1 and 0<=top<bottom<=1):
 photo=photo.crop((round(left*w),round(top*h),round(right*w),round(bottom*h)))
 a=np.asarray(photo).astype(float)
 r,g,b=a[:,:,0],a[:,:,1],a[:,:,2]
-a[(b>r*1.25+20)&(b>g*1.12)&(g>r*1.2)]=255
+if args.background=='blue':
+    a[(b>r*1.25+20)&(b>g*1.12)&(g>r*1.2)]=255
+elif args.background=='red':
+    a[(r>g*2.2+20)&(r>b*2.2+20)]=255
 im=ImageEnhance.Contrast(ImageOps.autocontrast(Image.fromarray(a.astype('uint8')).convert('L'))).enhance(1.15)
 grid=np.asarray(im.resize((96,68),Image.Resampling.LANCZOS))
 ramp=' .:-=+*#%@'

@@ -32,7 +32,7 @@ python scripts/prepare_portrait.py /path/to/photo.jpeg
 python scripts/make_showcase.py
 ```
 
-The default crop and blue-background mask are tuned to the supplied headshot. Use --crop LEFT TOP RIGHT BOTTOM with fractions between 0 and 1 to change framing. Daily rendering uses only the Python standard library; image packages are only needed to replace portrait data.
+The default crop and red-background mask are tuned to the supplied illustrated portrait. Use --background blue for a blue backdrop or --background none for an already isolated image. Use --crop LEFT TOP RIGHT BOTTOM with fractions between 0 and 1 to change framing. Daily rendering uses only the Python standard library; image packages are only needed to replace portrait data.
 
 ## Calendar
 
