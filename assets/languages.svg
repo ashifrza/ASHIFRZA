@@ -4,7 +4,7 @@
 <text x="65" y="32" font-family="Consolas,monospace" font-size="10" fill="#98abc6" >REPOSITORY SIGNAL / PUBLIC GITHUB DATA</text>
 <path d="M30 47H930" stroke="#263650"/>
 <text x="30" y="82" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#edf5ff" font-weight="bold">What the codebase says.</text>
-<text x="930" y="79" font-family="Consolas,monospace" font-size="9" fill="#98abc6" text-anchor="end">SYNC 2026-09-25 UTC</text>
+<text x="930" y="79" font-family="Consolas,monospace" font-size="9" fill="#98abc6" text-anchor="end">SYNC 2026-09-26 UTC</text>
 <rect x="30.00" y="108" width="467.24" height="15" fill="#62e7ff"/>
 <rect x="497.24" y="108" width="253.56" height="15" fill="#af98ff"/>
 <rect x="750.80" y="108" width="131.95" height="15" fill="#ffbc7a"/>
