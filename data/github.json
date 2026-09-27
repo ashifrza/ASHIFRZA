@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-26",
+  "as_of": "2026-09-27",
   "username": "ashifrza",
   "bio": "Full-Stack Dev & AI Engineer | React \u00b7 Node.js \u00b7 Python | Building HireEdge \ud83d\ude80 | Open to roles in Bengaluru & Remote.",
   "followers": 2,
@@ -8,6 +8,18 @@
   "stars": 0,
   "forks": 0,
   "repos": [
+    {
+      "name": "Clientora",
+      "description": "A Customer Relationship Managements System.",
+      "html_url": "https://github.com/ashifrza/Clientora",
+      "homepage": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-27T04:13:24Z"
+    },
     {
       "name": "ASHIFRZA",
       "description": null,
@@ -18,7 +30,7 @@
       "forks_count": 0,
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-09-25T11:48:32Z"
+      "pushed_at": "2026-09-26T11:22:14Z"
     },
     {
       "name": "Emotion_Detection",
@@ -67,18 +79,6 @@
       "fork": false,
       "archived": false,
       "pushed_at": "2026-09-11T04:42:02Z"
-    },
-    {
-      "name": "Clientora",
-      "description": "A Customer Relationship Managements System.",
-      "html_url": "https://github.com/ashifrza/Clientora",
-      "homepage": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-10T04:38:17Z"
     },
     {
       "name": "transformer-maintenance-guide",
