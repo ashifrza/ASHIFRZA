@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="346" viewBox="0 0 960 346" role="img"><title>The work, in public. 204 contributions. Current streak 2 days, longest streak 23 days in the displayed period. Updated 2026-09-27 UTC.</title><style>@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="346" viewBox="0 0 960 346" role="img"><title>The work, in public. 206 contributions. Current streak 3 days, longest streak 23 days in the displayed period. Updated 2026-09-28 UTC.</title><style>@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
 <rect x=".5" y=".5" width="959" height="345" rx="2" fill="#f4f2e8" stroke="#d5d5c8"/>
 <text x="32" y="35" font-family="Consolas,monospace" font-size="10" fill="#c44928" >05 / THE DAILY PRACTICE</text>
-<text x="928" y="35" font-family="Consolas,monospace" font-size="9" fill="#686b61" text-anchor="end">SYNCED 2026-09-27 UTC</text>
+<text x="928" y="35" font-family="Consolas,monospace" font-size="9" fill="#686b61" text-anchor="end">SYNCED 2026-09-28 UTC</text>
 <text x="32" y="79" font-family="Arial,Helvetica,sans-serif" font-size="28" fill="#222622" font-weight="bold" letter-spacing="-.5">A little work, most days.</text>
-<text x="32" y="127" font-family="Arial,Helvetica,sans-serif" font-size="31" fill="#c44928" font-weight="bold">204</text>
+<text x="32" y="127" font-family="Arial,Helvetica,sans-serif" font-size="31" fill="#c44928" font-weight="bold">206</text>
 <text x="120" y="125" font-family="Consolas,monospace" font-size="9" fill="#686b61" >CONTRIBUTIONS</text>
-<text x="347" y="127" font-family="Arial,Helvetica,sans-serif" font-size="31" fill="#c44928" font-weight="bold">2d</text>
+<text x="347" y="127" font-family="Arial,Helvetica,sans-serif" font-size="31" fill="#c44928" font-weight="bold">3d</text>
 <text x="435" y="125" font-family="Consolas,monospace" font-size="9" fill="#686b61" >CURRENT STREAK</text>
 <text x="662" y="127" font-family="Arial,Helvetica,sans-serif" font-size="31" fill="#c44928" font-weight="bold">23d</text>
 <text x="750" y="125" font-family="Consolas,monospace" font-size="9" fill="#686b61" >LONGEST IN WINDOW</text>
@@ -387,10 +387,11 @@
 <g class="enter" style="--d:1.008s"><rect x="893.25" y="260" width="12.38" height="12" rx="2" fill="#e4e4d8"><title>2026-09-25: 0 contributions</title></rect></g>
 <g class="enter" style="--d:1.026s"><rect x="893.25" y="276" width="12.38" height="12" rx="2" fill="#dfa784"><title>2026-09-26: 4 contributions</title></rect></g>
 <g class="enter" style="--d:0.936s"><rect x="909.62" y="180" width="12.38" height="12" rx="2" fill="#ecd4b9"><title>2026-09-27: 1 contributions</title></rect></g>
+<g class="enter" style="--d:0.954s"><rect x="909.62" y="196" width="12.38" height="12" rx="2" fill="#ecd4b9"><title>2026-09-28: 2 contributions</title></rect></g>
 <text x="32" y="206" font-family="Consolas,monospace" font-size="8" fill="#686b61" >M</text>
 <text x="32" y="238" font-family="Consolas,monospace" font-size="8" fill="#686b61" >W</text>
 <text x="32" y="270" font-family="Consolas,monospace" font-size="8" fill="#686b61" >F</text>
-<text x="32" y="318" font-family="Consolas,monospace" font-size="9" fill="#686b61" >2025-09-28 / 2026-09-27</text>
+<text x="32" y="318" font-family="Consolas,monospace" font-size="9" fill="#686b61" >2025-09-28 / 2026-09-28</text>
 <text x="382" y="318" font-family="Consolas,monospace" font-size="9" fill="#437161" >DAILY SYNC / PUBLIC GITHUB DATA</text>
 <text x="758" y="318" font-family="Consolas,monospace" font-size="8" fill="#686b61" >LESS</text>
 <rect x="794" y="308" width="12" height="12" rx="2" fill="#e4e4d8"/>

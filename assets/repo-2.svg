@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="465" height="215" viewBox="0 0 465 215" role="img"><title>Clientora: Customer relationship management. TypeScript. 0 stars, 0 forks. Updated 2026-09-27.</title><style>@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="465" height="215" viewBox="0 0 465 215" role="img"><title>Clientora: Customer relationship management. TypeScript. 0 stars, 0 forks. Updated 2026-09-28.</title><style>@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
 <rect x=".5" y=".5" width="464" height="214" rx="2" fill="#f4f2e8" stroke="#d5d5c8"/>
 <rect x="1" y="1" width="463" height="6" fill="#437161"/>
 <g class="enter">
@@ -11,5 +11,5 @@
 <path d="M22 166H443" stroke="#d5d5c8"/>
 <text x="22" y="192" font-family="Consolas,monospace" font-size="10" fill="#437161" >TypeScript</text>
 <text x="169" y="192" font-family="Consolas,monospace" font-size="9" fill="#686b61" >STARS 0 / FORKS 0</text>
-<text x="443" y="192" font-family="Consolas,monospace" font-size="9" fill="#686b61" text-anchor="end">2026-09-27</text>
+<text x="443" y="192" font-family="Consolas,monospace" font-size="9" fill="#686b61" text-anchor="end">2026-09-28</text>
 </svg>
