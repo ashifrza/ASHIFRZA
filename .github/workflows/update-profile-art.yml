@@ -10,6 +10,7 @@ on:
       - 'scripts/**'
       - 'profile.json'
       - 'assets/logos/**'
+      - 'assets/portrait.png'
       - '.github/workflows/update-profile-art.yml'
 
 permissions:

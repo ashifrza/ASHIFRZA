@@ -1,4 +1,4 @@
-"""Render actual contribution counts in the FIELDNOTES design language."""
+"""Render actual contribution counts in the GLASS NOTES design language."""
 from datetime import date, timedelta
 import json
 from build_dashboard import ROOT, frame as base_frame, t as text, save as write, INK, MUTED, LINE, CYAN as LIME, VIOLET as PURPLE, SANS
@@ -19,7 +19,7 @@ def main():
     origin=first-timedelta(days=(first.weekday()+1)%7)
     weeks=((date.fromisoformat(days[-1]['date'])-origin).days//7)+1
     step=868/weeks
-    palette=['#e4e4d8','#ecd4b9','#dfa784','#cf7754',LIME]
+    palette=['#303a32','#674c3a','#9c654a','#c8845f',LIME]
     for day in days:
         dt=date.fromisoformat(day['date'])
         col,row=divmod((dt-origin).days,7)

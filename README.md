@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="./assets/dashboard.svg" width="960" alt="ASHIF RZA, Fullstack Developer. React, Next.js, Node.js and Python. Building HireEdge. Open to roles in Bengaluru and remotely. Public GitHub statistics shown below." />
+<img src="./assets/dashboard.svg" width="960" alt="ASHIF RZA with an automatically animated illustrated portrait, Fullstack Developer. React, Next.js, Node.js and Python. Building HireEdge. Open to roles in Bengaluru and remotely. Public GitHub statistics shown below." />
 
 <p><a href="#about">About</a> &nbsp; / &nbsp; <a href="#toolbox">Toolbox</a> &nbsp; / &nbsp; <a href="#repositories">Repositories</a> &nbsp; / &nbsp; <a href="#activity">Activity</a> &nbsp; / &nbsp; <a href="https://ashifrza.github.io/ASHIFRZA/">Play Commit Dash ↗</a></p>
 
-<img src="https://komarev.com/ghpvc/?username=ashifrza&label=Profile%20views&color=c44928&style=flat-square" alt="Profile views, provided by an external badge-load counter" />
+<img src="https://komarev.com/ghpvc/?username=ashifrza&label=Profile%20views&color=ad694a&style=flat-square" alt="Profile views, provided by an external badge-load counter" />
 
 ### About
 
