@@ -1,12 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="465" height="184" viewBox="0 0 465 184" role="img"><title>Emotion_Detection: Exploring emotion detection with Python. Python. 0 stars, 0 forks. Updated 2026-09-19.</title><style>@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect x=".5" y=".5" width="464" height="183" rx="18" fill="#0a1120" stroke="#263650"/>
-<text x="22" y="30" font-family="Consolas,monospace" font-size="9" fill="#af98ff" >REPO / 03</text>
-<text x="439" y="30" font-family="Consolas,monospace" font-size="19" fill="#62e7ff" text-anchor="end">↗</text>
-<text x="22" y="64" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#edf5ff" font-weight="bold">Emotion_Detection</text>
-<text x="22" y="95" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#98abc6" >Exploring emotion detection with Python.</text>
-<text x="22" y="117" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#98abc6" >Computer vision and applied machine learning.</text>
-<path d="M22 135H443" stroke="#263650"/>
-<text x="22" y="160" font-family="Consolas,monospace" font-size="10" fill="#62e7ff" >Python</text>
-<text x="183" y="160" font-family="Consolas,monospace" font-size="9" fill="#98abc6" >STARS 0 / FORKS 0</text>
-<text x="443" y="160" font-family="Consolas,monospace" font-size="9" fill="#98abc6" text-anchor="end">2026-09-19</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="465" height="215" viewBox="0 0 465 215" role="img"><title>Emotion_Detection: Emotion detection with Python. Python. 0 stars, 0 forks. Updated 2026-09-19.</title><style>@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect x=".5" y=".5" width="464" height="214" rx="2" fill="#f4f2e8" stroke="#d5d5c8"/>
+<rect x="1" y="1" width="463" height="6" fill="#c44928"/>
+<g class="enter">
+<text x="22" y="39" font-family="Consolas,monospace" font-size="9" fill="#686b61" >03 / SELECTED WORK</text>
+<text x="440" y="40" font-family="Consolas,monospace" font-size="22" fill="#c44928" text-anchor="end">↗</text>
+<text x="22" y="88" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#222622" font-weight="bold" letter-spacing="-.7">Emotion_Detection</text>
+<text x="22" y="119" font-family="Georgia,serif" font-size="14" fill="#686b61" font-style="italic">Emotion detection with Python.</text>
+<text x="22" y="143" font-family="Consolas,monospace" font-size="11" fill="#686b61" >Computer vision + machine learning.</text>
+</g>
+<path d="M22 166H443" stroke="#d5d5c8"/>
+<text x="22" y="192" font-family="Consolas,monospace" font-size="10" fill="#437161" >Python</text>
+<text x="169" y="192" font-family="Consolas,monospace" font-size="9" fill="#686b61" >STARS 0 / FORKS 0</text>
+<text x="443" y="192" font-family="Consolas,monospace" font-size="9" fill="#686b61" text-anchor="end">2026-09-19</text>
 </svg>

@@ -1,4 +1,4 @@
-"""Render actual contribution counts in the SIGNAL design language."""
+"""Render actual contribution counts in the FIELDNOTES design language."""
 from datetime import date, timedelta
 import json
 from build_dashboard import ROOT, frame as base_frame, t as text, save as write, INK, MUTED, LINE, CYAN as LIME, VIOLET as PURPLE, SANS
@@ -11,7 +11,7 @@ def main():
     data=json.loads((ROOT/'data/contributions.json').read_text())
     days,stats=data['days'],data['stats']
     p=frame(346,'The work, in public',f"{stats['total']} contributions. Current streak {stats['current_streak']} days, longest streak {stats['longest_streak']} days in the displayed period. Updated {data['as_of']} UTC.")
-    p += [text(32,35,'03 / THE WORK, IN PUBLIC',10,LIME),text(928,35,f"SYNCED {data['as_of']} UTC",9,MUTED,extra='text-anchor="end"'),text(32,79,'Small commits. Real progress.',28,INK,SANS,'font-weight="bold" letter-spacing="-.5"')]
+    p += [text(32,35,'05 / THE DAILY PRACTICE',10,LIME),text(928,35,f"SYNCED {data['as_of']} UTC",9,MUTED,extra='text-anchor="end"'),text(32,79,'A little work, most days.',28,INK,SANS,'font-weight="bold" letter-spacing="-.5"')]
     for x,value,label in [(32,stats['total'],'CONTRIBUTIONS'),(347,f"{stats['current_streak']}d",'CURRENT STREAK'),(662,f"{stats['longest_streak']}d",'LONGEST IN WINDOW')]:
         p += [text(x,127,value,31,LIME,SANS,'font-weight="bold"'),text(x+88,125,label,9,MUTED)]
     p += [f'<path d="M32 145H928" stroke="{LINE}"/>']
@@ -19,7 +19,7 @@ def main():
     origin=first-timedelta(days=(first.weekday()+1)%7)
     weeks=((date.fromisoformat(days[-1]['date'])-origin).days//7)+1
     step=868/weeks
-    palette=['#1b273b','#164658','#20728a','#3ca9c2',LIME]
+    palette=['#e4e4d8','#ecd4b9','#dfa784','#cf7754',LIME]
     for day in days:
         dt=date.fromisoformat(day['date'])
         col,row=divmod((dt-origin).days,7)

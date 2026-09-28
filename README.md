@@ -4,7 +4,7 @@
 
 <p><a href="#about">About</a> &nbsp; / &nbsp; <a href="#toolbox">Toolbox</a> &nbsp; / &nbsp; <a href="#repositories">Repositories</a> &nbsp; / &nbsp; <a href="#activity">Activity</a> &nbsp; / &nbsp; <a href="https://ashifrza.github.io/ASHIFRZA/">Play Commit Dash ↗</a></p>
 
-<img src="https://komarev.com/ghpvc/?username=ashifrza&label=Profile%20views&color=247c9c&style=flat-square" alt="Profile views, provided by an external badge-load counter" />
+<img src="https://komarev.com/ghpvc/?username=ashifrza&label=Profile%20views&color=c44928&style=flat-square" alt="Profile views, provided by an external badge-load counter" />
 
 ### About
 
@@ -54,6 +54,6 @@ My current public GitHub bio lists **HireEdge**, an AI interview preparation pla
 
 [Portfolio](https://www.ashifrza.in/) · [LinkedIn](https://www.linkedin.com/in/ashifrza/) · [Email](mailto:ashifrza18@gmail.com)
 
-<samp>ASHIF RZA / CODE. BUILD. PLAY.</samp>
+<samp>ASHIF RZA / BUILD. LEARN. REPEAT.</samp>
 
 </div>

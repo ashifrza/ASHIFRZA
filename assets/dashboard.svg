@@ -1,49 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img"><title>ASHIF RZA / Fullstack developer. React, Node.js and AI. Currently building HireEdge. No portrait; animated isometric software layers.</title><style>@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect x=".5" y=".5" width="959" height="479" rx="18" fill="#0a1120" stroke="#263650"/>
-<text x="30" y="32" font-family="Consolas,monospace" font-size="10" fill="#62e7ff" >AR</text>
-<text x="65" y="32" font-family="Consolas,monospace" font-size="10" fill="#98abc6" >DEVELOPER WORKSPACE / ASHIF RZA</text>
-<path d="M30 47H930" stroke="#263650"/>
-<text x="930" y="32" font-family="Consolas,monospace" font-size="10" fill="#62e7ff" text-anchor="end">CODE  /  BUILD  /  PLAY</text>
-<text x="30" y="94" font-family="Consolas,monospace" font-size="12" fill="#62e7ff" letter-spacing="2">FULLSTACK DEVELOPER</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500" role="img"><title>FIELDNOTES / Ashif Rza, Fullstack Developer. Animated editorial profile with public GitHub statistics.</title><style>@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect x=".5" y=".5" width="959" height="499" rx="2" fill="#f4f2e8" stroke="#d5d5c8"/>
+<text x="30" y="32" font-family="Consolas,monospace" font-size="10" fill="#c44928" >AR</text>
+<text x="65" y="32" font-family="Consolas,monospace" font-size="10" fill="#686b61" >FIELDNOTES / THE WORK OF ASHIF RZA</text>
+<path d="M30 47H930" stroke="#d5d5c8"/>
+<text x="930" y="32" font-family="Consolas,monospace" font-size="10" fill="#686b61" text-anchor="end">SOFTWARE / NOTES / EXPERIMENTS</text>
+<text x="32" y="91" font-family="Consolas,monospace" font-size="11" fill="#c44928" letter-spacing="2">FULLSTACK DEVELOPER</text>
 <g class="enter">
-<text x="26" y="170" font-family="Arial,Helvetica,sans-serif" font-size="69" fill="#edf5ff" font-weight="900" letter-spacing="-3">ASHIF RZA</text>
-<text x="30" y="225" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#edf5ff" font-weight="bold">Ideas into interfaces.</text>
-<text x="30" y="265" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#edf5ff" font-weight="bold">Interfaces into systems.</text>
+<text x="25" y="195" font-family="Arial,Helvetica,sans-serif" font-size="116" fill="#222622" font-weight="900" letter-spacing="-7">ASHIF</text>
+<text x="25" y="299" font-family="Arial,Helvetica,sans-serif" font-size="116" fill="#222622" font-weight="900" letter-spacing="-7">RZA.</text>
 </g>
-<text x="30" y="306" font-family="Consolas,monospace" font-size="14" fill="#98abc6" >React / Next.js / Node.js / Python</text>
-<text x="30" y="346" font-family="Consolas,monospace" font-size="9" fill="#af98ff" >NOW BUILDING</text>
-<text x="145" y="347" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#edf5ff" >HireEdge · AI interview prep</text>
-<text x="30" y="375" font-family="Consolas,monospace" font-size="12" fill="#98abc6" >Open to roles · Bengaluru &amp; remote</text>
-<path class="flow" d="M747 125V385" stroke="#62e7ff" stroke-width="2"/>
-<g class="float" style="--d:-0.0s">
-<path d="M602 281L746 225L896 281L748 338Z" fill="#152841" stroke="#af98ff"/>
-<path d="M602 281V303L748 361V338Z" fill="#102038" stroke="#2b4564"/>
-<path d="M748 338L896 281V303L748 361Z" fill="#0e192c" stroke="#2b4564"/>
-<text x="748" y="348" font-family="Consolas,monospace" font-size="10" fill="#af98ff" text-anchor="middle">DATA + AI</text>
-<circle class="pulse" cx="627" cy="293" r="3" fill="#af98ff"/>
+<text x="32" y="344" font-family="Georgia,serif" font-size="27" fill="#222622" font-style="italic">Code, craft &amp; a little curiosity.</text>
+<text x="32" y="378" font-family="Consolas,monospace" font-size="13" fill="#686b61" >React interfaces. Node.js APIs. Applied AI.</text>
+<path d="M586 75V400" stroke="#d5d5c8"/>
+<circle cx="770" cy="194" r="115" fill="#e8e7da"/>
+<circle cx="770" cy="194" r="87" fill="none" stroke="#d1d2c2"/>
+<g class="spin">
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(0 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(30 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(60 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(90 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(120 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(150 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(180 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(210 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(240 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(270 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(300 770 194)"/>
+<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate(330 770 194)"/>
 </g>
-<g class="float" style="--d:-0.7s">
-<path d="M602 218L746 162L896 218L748 275Z" fill="#152841" stroke="#62e7ff"/>
-<path d="M602 218V240L748 298V275Z" fill="#102038" stroke="#2b4564"/>
-<path d="M748 275L896 218V240L748 298Z" fill="#0e192c" stroke="#2b4564"/>
-<text x="748" y="285" font-family="Consolas,monospace" font-size="10" fill="#62e7ff" text-anchor="middle">API / LOGIC</text>
-<circle class="pulse" cx="649" cy="230" r="3" fill="#62e7ff"/>
-</g>
-<g class="float" style="--d:-1.4s">
-<path d="M602 155L746 99L896 155L748 212Z" fill="#152841" stroke="#b1c5ff"/>
-<path d="M602 155V177L748 235V212Z" fill="#102038" stroke="#2b4564"/>
-<path d="M748 212L896 155V177L748 235Z" fill="#0e192c" stroke="#2b4564"/>
-<text x="748" y="222" font-family="Consolas,monospace" font-size="10" fill="#b1c5ff" text-anchor="middle">INTERFACE</text>
-<circle class="pulse" cx="671" cy="167" r="3" fill="#b1c5ff"/>
-</g>
-<text x="748" y="392" font-family="Consolas,monospace" font-size="9" fill="#98abc6" text-anchor="middle">THE FULL STACK, IN MOTION</text>
-<path d="M30 413H930" stroke="#263650"/>
-<text x="30" y="454" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#62e7ff" font-weight="bold">8</text>
-<text x="87" y="450" font-family="Consolas,monospace" font-size="9" fill="#98abc6" >PUBLIC REPOS</text>
-<text x="265" y="454" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#62e7ff" font-weight="bold">204</text>
-<text x="322" y="450" font-family="Consolas,monospace" font-size="9" fill="#98abc6" >CONTRIBUTIONS</text>
-<text x="525" y="454" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#62e7ff" font-weight="bold">2</text>
-<text x="582" y="450" font-family="Consolas,monospace" font-size="9" fill="#98abc6" >FOLLOWERS</text>
-<text x="760" y="454" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#62e7ff" font-weight="bold">0</text>
-<text x="817" y="450" font-family="Consolas,monospace" font-size="9" fill="#98abc6" >REPO STARS</text>
+<circle cx="770" cy="194" r="31" fill="#f4f2e8"/>
+<text x="770" y="202" font-family="Consolas,monospace" font-size="21" fill="#222622" text-anchor="middle">&lt;/&gt;</text>
+<text x="770" y="345" font-family="Consolas,monospace" font-size="11" fill="#437161" text-anchor="middle" letter-spacing="1">BUILD / LEARN / REPEAT</text>
+<text x="770" y="375" font-family="Georgia,serif" font-size="13" fill="#686b61" text-anchor="middle" font-style="italic">A practice, not a finish line.</text>
+<path d="M30 412H930" stroke="#d5d5c8"/>
+<text x="32" y="458" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#222622" font-weight="bold">8</text>
+<text x="113" y="453" font-family="Consolas,monospace" font-size="9" fill="#686b61" >PUBLIC REPOS</text>
+<text x="266" y="458" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#222622" font-weight="bold">204</text>
+<text x="347" y="453" font-family="Consolas,monospace" font-size="9" fill="#686b61" >CONTRIBUTIONS</text>
+<text x="505" y="458" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#222622" font-weight="bold">2</text>
+<text x="586" y="453" font-family="Consolas,monospace" font-size="9" fill="#686b61" >FOLLOWERS</text>
+<text x="743" y="458" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#222622" font-weight="bold">0</text>
+<text x="824" y="453" font-family="Consolas,monospace" font-size="9" fill="#686b61" >REPO STARS</text>
+<text x="930" y="486" font-family="Consolas,monospace" font-size="8" fill="#686b61" text-anchor="end">DATA SNAPSHOT / 2026-09-27</text>
 </svg>

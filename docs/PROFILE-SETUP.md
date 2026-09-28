@@ -1,6 +1,6 @@
-# Developer dashboard maintenance
+# FIELDNOTES profile maintenance
 
-This README is a GitHub-native developer dashboard, not a replacement for ashifrza.in. It uses animated SVG panels, repository links, an expandable About section, local technology logos and a game launcher. No portrait is displayed.
+This README is a GitHub-native developer dashboard, not a replacement for ashifrza.in. Its FIELDNOTES design uses warm paper surfaces, charcoal typography, terracotta accents, a rotating geometric mark, animated project cards, repository links, an expandable About section, local technology logos and a game launcher. No portrait is displayed.
 
 ## Data and content
 
