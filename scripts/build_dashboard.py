@@ -1,21 +1,29 @@
-"""Render the FIELDNOTES profile from real GitHub snapshots."""
-import json, math, re
+"""Render the GLASS NOTES profile from real GitHub snapshots."""
+import json, math, re, base64
 from html import escape
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import os
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'assets';OUT.mkdir(exist_ok=True)
-INK='#222622';MUTED='#686b61';CYAN='#c44928';VIOLET='#437161';LINE='#d5d5c8';BG='#f4f2e8';MONO='Consolas,monospace';SANS='Arial,Helvetica,sans-serif'
+INK='#f3eee2';MUTED='#b0b0a4';CYAN='#ed9d79';VIOLET='#afc4af';LINE='#444940';BG='#131815';MONO='Consolas,monospace';SANS='Arial,Helvetica,sans-serif'
 G=json.loads((ROOT/'data/github.json').read_text());C=json.loads((ROOT/'data/contributions.json').read_text())
 
 def t(x,y,s,size=12,color=INK,font=MONO,extra=''):
  return f'<text x="{x}" y="{y}" font-family="{font}" font-size="{size}" fill="{color}" {extra}>{escape(str(s))}</text>'
 
 def frame(w,h,title):
- css='''@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}'''
- if os.environ.get('STATIC')=='1':css+='*{animation:none!important}'
- return [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img"><title>{escape(title)}</title><style>{css}</style>',f'<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="2" fill="{BG}" stroke="{LINE}"/>']
+ css='''@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes tilt{0%,100%{transform:translate(0,0) rotate(-2deg) scale(.99)}50%{transform:translate(-4px,-7px) rotate(2deg) scale(1.015)}}@keyframes sheen{0%,15%{transform:translateX(-450px);opacity:0}35%,55%{opacity:.7}80%,100%{transform:translateX(1100px);opacity:0}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:.8}}.enter{animation:in .9s ease-out both;animation-delay:var(--d,0s)}.portrait{transform-origin:751px 239px;animation:tilt 9s ease-in-out infinite}.sheen{animation:sheen 12s ease-in-out infinite;pointer-events:none}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 6s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}.sheen{display:none}}'''
+ if os.environ.get('STATIC')=='1':css+='*{animation:none!important}.sheen{display:none}'
+ return [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img"><title>{escape(title)}</title><style>{css}</style>',
+ '<defs><linearGradient id="surface" x2="1" y2="1"><stop stop-color="#303b33"/><stop offset=".5" stop-color="#1b221e"/><stop offset="1" stop-color="#20201d"/></linearGradient><linearGradient id="edge" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".38"/><stop offset=".4" stop-color="#d3ddc9" stop-opacity=".05"/><stop offset="1" stop-color="#d3ddc9" stop-opacity=".22"/></linearGradient><linearGradient id="glass" x2=".7" y2="1"><stop stop-color="#ffffff" stop-opacity=".11"/><stop offset="1" stop-color="#ffffff" stop-opacity=".025"/></linearGradient><linearGradient id="shine"><stop stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".12"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient><radialGradient id="warm"><stop stop-color="#bf5d37" stop-opacity=".22"/><stop offset="1" stop-color="#bf5d37" stop-opacity="0"/></radialGradient><radialGradient id="sage"><stop stop-color="#9abca5" stop-opacity=".14"/><stop offset="1" stop-color="#9abca5" stop-opacity="0"/></radialGradient></defs>',
+ f'<defs><clipPath id="panel"><rect x="1" y="1" width="{w-2}" height="{h-2}" rx="26"/></clipPath></defs>',
+ f'<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="26" fill="url(#surface)" stroke="url(#edge)"/>',
+ f'<g clip-path="url(#panel)"><ellipse cx="{w*.94}" cy="{h*.13}" rx="{w*.6}" ry="{h*.9}" fill="url(#warm)"/><ellipse cx="0" cy="{h}" rx="{w*.55}" ry="{h}" fill="url(#sage)"/></g>']
+
+
+def glass(x,y,w,h,r=18):
+ return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="url(#glass)" stroke="url(#edge)"/>'
 
 def save(p,name): (OUT/name).write_text('\n'.join(p+['</svg>'])+'\n',encoding='utf-8')
 
@@ -36,22 +44,26 @@ def icon(name,x,y,size=32):
  return s
 
 def hero():
- p=frame(960,500,'FIELDNOTES / Ashif Rza, Fullstack Developer. Animated editorial profile with public GitHub statistics.')
- label(p,'AR','FIELDNOTES / THE WORK OF ASHIF RZA')
- p += [t(930,32,'SOFTWARE / NOTES / EXPERIMENTS',10,MUTED,extra='text-anchor="end"'),t(32,91,'FULLSTACK DEVELOPER',11,CYAN,extra='letter-spacing="2"'),
-       '<g class="enter">',t(25,195,'ASHIF',116,INK,SANS,'font-weight="900" letter-spacing="-7"'),t(25,299,'RZA.',116,INK,SANS,'font-weight="900" letter-spacing="-7"'),'</g>',
-       t(32,344,'Code, craft & a little curiosity.',27,INK,'Georgia,serif','font-style="italic"'),t(32,378,'React interfaces. Node.js APIs. Applied AI.',13,MUTED),
-       '<path d="M586 75V400" stroke="#d5d5c8"/>',
-       '<circle cx="770" cy="194" r="115" fill="#e8e7da"/>','<circle cx="770" cy="194" r="87" fill="none" stroke="#d1d2c2"/>',
-       '<g class="spin">']
- for a in range(0,360,30):
-  p.append(f'<rect x="760" y="101" width="20" height="186" rx="2" fill="#c44928" transform="rotate({a} 770 194)"/>')
- p += ['</g>','<circle cx="770" cy="194" r="31" fill="#f4f2e8"/>',t(770,202,'&lt;/&gt;'.replace('&lt;','<').replace('&gt;','>'),21,INK,extra='text-anchor="middle"'),
-       t(770,345,'BUILD / LEARN / REPEAT',11,VIOLET,extra='text-anchor="middle" letter-spacing="1"'),t(770,375,'A practice, not a finish line.',13,MUTED,'Georgia,serif','text-anchor="middle" font-style="italic"'),
-       '<path d="M30 412H930" stroke="#d5d5c8"/>']
- for x,num,txt in [(32,G['public_repos'],'PUBLIC REPOS'),(266,C['stats']['total'],'CONTRIBUTIONS'),(505,G['followers'],'FOLLOWERS'),(743,G['stars'],'REPO STARS')]:
-  p += [t(x,458,num,32,INK,SANS,'font-weight="bold"'),t(x+81,453,txt,9,MUTED)]
- p.append(t(930,486,'DATA SNAPSHOT / '+G['as_of'],8,MUTED,extra='text-anchor="end"'))
+ p=frame(960,565,'ASHIF RZA / Fullstack Developer. Illustrated portrait with automatic tilt. Dark glass-style README with terracotta, sage and cream.')
+ label(p,'AR','GLASS NOTES / ASHIF RZA')
+ p += [t(930,32,'BUILD / LEARN / REPEAT',10,VIOLET,extra='text-anchor="end"'),
+       glass(30,73,237,30,15),'<circle cx="47" cy="88" r="3" fill="#afc4af"/>',t(61,92,'FULLSTACK DEVELOPER',10,INK),
+       '<g class="enter">',t(27,195,'ASHIF',98,INK,SANS,'font-weight="900" letter-spacing="-5"'),t(27,285,'RZA.',98,INK,SANS,'font-weight="900" letter-spacing="-5"'),'</g>',
+       t(32,329,'Code, craft & a little curiosity.',27,INK,'Georgia,serif','font-style="italic"'),t(32,363,'React interfaces. Node.js APIs. Applied AI.',13,MUTED),
+       glass(30,394,474,45,16),t(48,421,'NOW',10,CYAN),t(97,421,'HireEdge / AI interview preparation',12,INK)]
+ image_data=base64.b64encode((OUT/'portrait.png').read_bytes()).decode('ascii')
+ p += ['<circle cx="751" cy="244" r="174" fill="url(#warm)"/>',
+       '<g class="portrait">',glass(569,71,363,350,44),
+       '<defs><clipPath id="portrait-circle"><circle cx="751" cy="237" r="145"/></clipPath></defs>',
+       f'<image x="606" y="92" width="290" height="290" href="data:image/png;base64,{image_data}" clip-path="url(#portrait-circle)"/>',
+       '<circle cx="751" cy="237" r="145" fill="none" stroke="#f3eee2" stroke-opacity=".35"/>',
+       '<path d="M587 118Q587 88 620 88H808" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>',
+       '<g clip-path="url(#portrait-circle)"><path class="sheen" d="M0 50H95L245 420H150Z" fill="url(#shine)"/></g>',
+       t(751,405,'THE HUMAN BEHIND THE CODE',9,VIOLET,extra='text-anchor="middle" letter-spacing="1"'),'</g>',
+       '<path d="M30 464H930" stroke="#444940"/>']
+ for x,num,txt in [(30,G['public_repos'],'PUBLIC REPOS'),(263,C['stats']['total'],'CONTRIBUTIONS'),(496,G['followers'],'FOLLOWERS'),(729,G['stars'],'REPO STARS')]:
+  p += [glass(x,481,201,59,17),t(x+17,520,num,27,INK,SANS,'font-weight="bold"'),t(x+87,516,txt,8,VIOLET)]
+ p.append(t(930,556,'DATA SNAPSHOT / '+G['as_of'],8,MUTED,extra='text-anchor="end"'))
  save(p,'dashboard.svg')
 
 def about():
@@ -69,14 +81,14 @@ def stack():
  items=[('react','React'),('nextjs','Next.js'),('typescript','TypeScript'),('javascript','JavaScript'),('tailwindcss','Tailwind'),('nodejs','Node.js'),('express','Express'),('python','Python'),('flask','Flask'),('mongodb','MongoDB'),('mysql','MySQL'),('git','Git'),('wordpress','WordPress'),('bootstrap','Bootstrap'),('html5','HTML5'),('css3','CSS3')]
  for i,(slug,name) in enumerate(items):
   col,row=i%8,i//8;x=30+col*113;y=72+row*112
-  p += [f'<g class="enter" style="--d:{i*.035}s">',f'<rect x="{x}" y="{y}" width="105" height="97" rx="2" fill="#ebeadd" stroke="{LINE}"/>',icon(slug,x+36,y+16,32),t(x+52,y+77,name,11,INK,extra='text-anchor="middle"'),'</g>']
+  p += [f'<g class="enter" style="--d:{i*.035}s">',f'<rect x="{x}" y="{y}" width="105" height="97" rx="18" fill="url(#glass)" stroke="url(#edge)"/>',icon(slug,x+36,y+16,32),t(x+52,y+77,name,11,INK,extra='text-anchor="middle"'),'</g>']
  save(p,'stack.svg')
 
 def activity():
  p=frame(960,220,'Public repository language composition by GitHub language bytes, excluding forks and this profile repository. This is code composition, not a proficiency score.')
  label(p,'04','THE CODE / PUBLIC REPOSITORIES')
  langs=G['language_bytes'];total=sum(langs.values()) or 1
- colors=['#c44928','#437161','#c79446','#657483','#a07476','#aaa693']
+ colors=['#e49c79','#afc4af','#cfb277','#a2acbe','#c595a1','#888e83']
  p += [t(30,82,'A footprint in code.',24,INK,SANS,'font-weight="bold"'),t(930,79,'SYNC '+G['as_of']+' UTC',9,MUTED,extra='text-anchor="end"')]
  x=30
  for i,(name,count) in enumerate(langs.items()):
@@ -94,15 +106,15 @@ def repos():
   r=byname.get(name)
   if not r:raise ValueError('Featured repository missing: '+name)
   p=frame(465,215,f"{name}: {one} {r['language']}. {r['stargazers_count']} stars, {r['forks_count']} forks. Updated {r['pushed_at'][:10]}.")
-  p += [f'<rect x="1" y="1" width="463" height="6" fill="{CYAN if i%2==0 else VIOLET}"/>','<g class="enter">',t(22,39,f'0{i+1} / SELECTED WORK',9,MUTED),t(440,40,'↗',22,CYAN,extra='text-anchor="end"'),t(22,88,name,26,INK,SANS,'font-weight="bold" letter-spacing="-.7"'),t(22,119,one,14,MUTED,'Georgia,serif','font-style="italic"'),t(22,143,two,11,MUTED),'</g>',f'<path d="M22 166H443" stroke="{LINE}"/>',t(22,192,r['language'] or 'Docs',10,VIOLET),t(169,192,f"STARS {r['stargazers_count']} / FORKS {r['forks_count']}",9,MUTED),t(443,192,r['pushed_at'][:10],9,MUTED,extra='text-anchor="end"')]
+  p += [f'<path d="M24 14H441" stroke="{CYAN if i%2==0 else VIOLET}" stroke-opacity=".5"/>','<g class="enter">',t(22,39,f'0{i+1} / SELECTED WORK',9,MUTED),t(440,40,'↗',22,CYAN,extra='text-anchor="end"'),t(22,88,name,26,INK,SANS,'font-weight="bold" letter-spacing="-.7"'),t(22,119,one,14,MUTED,'Georgia,serif','font-style="italic"'),t(22,143,two,11,MUTED),'</g>',f'<path d="M22 166H443" stroke="{LINE}"/>',t(22,192,r['language'] or 'Docs',10,VIOLET),t(169,192,f"STARS {r['stargazers_count']} / FORKS {r['forks_count']}",9,MUTED),t(443,192,r['pushed_at'][:10],9,MUTED,extra='text-anchor="end"')]
   save(p,f'repo-{i+1}.svg')
 
 def arcade():
  p=frame(960,242,'Play Commit Dash. A 45-second runner with keyboard and touch controls. Opens the existing game on a separate page.')
  label(p,'06','A SMALL DISTRACTION')
  p += [t(30,112,'All work? No thanks.',38,INK,'Georgia,serif','font-style="italic"'),t(30,152,'Collect commits. Dodge bugs. Beat your best.',14,MUTED),t(30,213,'COMMIT DASH / 45 SECONDS / KEYBOARD + TOUCH',9,VIOLET),
-       '<rect x="631" y="83" width="267" height="86" fill="#222622"/>',t(665,135,'PLAY A ROUND',17,'#f4f2e8',extra='font-weight="bold"'),t(869,138,'↗',29,'#f4f2e8',extra='text-anchor="end"'),
-       '<path class="flow" d="M632 196H899" stroke="#c44928" stroke-width="2"/>']
+       glass(631,83,267,86,25),t(665,135,'PLAY A ROUND',17,'#f4f2e8',extra='font-weight="bold"'),t(869,138,'↗',29,'#f4f2e8',extra='text-anchor="end"'),
+       '<path class="flow" d="M632 196H899" stroke="#ed9d79" stroke-width="2"/>']
  save(p,'arcade.svg')
 
 if __name__=='__main__':

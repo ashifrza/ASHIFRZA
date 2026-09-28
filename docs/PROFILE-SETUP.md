@@ -1,6 +1,8 @@
-# FIELDNOTES profile maintenance
+# GLASS NOTES profile maintenance
 
-This README is a GitHub-native developer dashboard, not a replacement for ashifrza.in. Its FIELDNOTES design uses warm paper surfaces, charcoal typography, terracotta accents, a rotating geometric mark, animated project cards, repository links, an expandable About section, local technology logos and a game launcher. No portrait is displayed.
+This is a GitHub-native README, not a separate scrolling website. GLASS NOTES uses a dark sage/terracotta palette, layered translucent gradients, rounded glass-style panels, and the user's illustrated portrait on the right. Its portrait tilts automatically, a light sweep moves across it, and content fades in. GitHub READMEs cannot run cursor tracking, scroll-triggered scripts, or backdrop blur against the GitHub page; these effects are self-contained SVG approximations.
+
+The portrait source is assets/portrait.png. The renderer embeds it as a data URI in dashboard.svg so it remains visible when GitHub loads the SVG as an image. The image is preserved without generative alterations. The source photo file name and local path are not published. STATIC=1 and reduced-motion preferences disable motion.
 
 ## Data and content
 
@@ -39,4 +41,4 @@ After editing the game, publish those files to the gh-pages branch. The publish-
 
 ## Assets
 
-Technology logos are from Devicon (https://github.com/devicons/devicon), distributed with its MIT license in assets/logos/LICENSE. Technology names and marks belong to their respective owners. Portrait assets and their generators have been removed from this version; earlier versions remain in Git history.
+Technology logos are from Devicon (https://github.com/devicons/devicon), distributed with its MIT license in assets/logos/LICENSE. Technology names and marks belong to their respective owners. The illustrated portrait was supplied by the profile owner.

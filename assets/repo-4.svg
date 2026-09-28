@@ -1,15 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="465" height="215" viewBox="0 0 465 215" role="img"><title>VideoWithAi: A Next.js project. TypeScript. 0 stars, 0 forks. Updated 2026-02-05.</title><style>@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect x=".5" y=".5" width="464" height="214" rx="2" fill="#f4f2e8" stroke="#d5d5c8"/>
-<rect x="1" y="1" width="463" height="6" fill="#437161"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="465" height="215" viewBox="0 0 465 215" role="img"><title>VideoWithAi: A Next.js project. TypeScript. 0 stars, 0 forks. Updated 2026-02-05.</title><style>@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes tilt{0%,100%{transform:translate(0,0) rotate(-2deg) scale(.99)}50%{transform:translate(-4px,-7px) rotate(2deg) scale(1.015)}}@keyframes sheen{0%,15%{transform:translateX(-450px);opacity:0}35%,55%{opacity:.7}80%,100%{transform:translateX(1100px);opacity:0}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:.8}}.enter{animation:in .9s ease-out both;animation-delay:var(--d,0s)}.portrait{transform-origin:751px 239px;animation:tilt 9s ease-in-out infinite}.sheen{animation:sheen 12s ease-in-out infinite;pointer-events:none}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 6s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}.sheen{display:none}}</style>
+<defs><linearGradient id="surface" x2="1" y2="1"><stop stop-color="#303b33"/><stop offset=".5" stop-color="#1b221e"/><stop offset="1" stop-color="#20201d"/></linearGradient><linearGradient id="edge" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".38"/><stop offset=".4" stop-color="#d3ddc9" stop-opacity=".05"/><stop offset="1" stop-color="#d3ddc9" stop-opacity=".22"/></linearGradient><linearGradient id="glass" x2=".7" y2="1"><stop stop-color="#ffffff" stop-opacity=".11"/><stop offset="1" stop-color="#ffffff" stop-opacity=".025"/></linearGradient><linearGradient id="shine"><stop stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".12"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient><radialGradient id="warm"><stop stop-color="#bf5d37" stop-opacity=".22"/><stop offset="1" stop-color="#bf5d37" stop-opacity="0"/></radialGradient><radialGradient id="sage"><stop stop-color="#9abca5" stop-opacity=".14"/><stop offset="1" stop-color="#9abca5" stop-opacity="0"/></radialGradient></defs>
+<defs><clipPath id="panel"><rect x="1" y="1" width="463" height="213" rx="26"/></clipPath></defs>
+<rect x=".5" y=".5" width="464" height="214" rx="26" fill="url(#surface)" stroke="url(#edge)"/>
+<g clip-path="url(#panel)"><ellipse cx="437.09999999999997" cy="27.95" rx="279.0" ry="193.5" fill="url(#warm)"/><ellipse cx="0" cy="215" rx="255.75000000000003" ry="215" fill="url(#sage)"/></g>
+<path d="M24 14H441" stroke="#afc4af" stroke-opacity=".5"/>
 <g class="enter">
-<text x="22" y="39" font-family="Consolas,monospace" font-size="9" fill="#686b61" >04 / SELECTED WORK</text>
-<text x="440" y="40" font-family="Consolas,monospace" font-size="22" fill="#c44928" text-anchor="end">↗</text>
-<text x="22" y="88" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#222622" font-weight="bold" letter-spacing="-.7">VideoWithAi</text>
-<text x="22" y="119" font-family="Georgia,serif" font-size="14" fill="#686b61" font-style="italic">A Next.js project.</text>
-<text x="22" y="143" font-family="Consolas,monospace" font-size="11" fill="#686b61" >TypeScript across the application.</text>
+<text x="22" y="39" font-family="Consolas,monospace" font-size="9" fill="#b0b0a4" >04 / SELECTED WORK</text>
+<text x="440" y="40" font-family="Consolas,monospace" font-size="22" fill="#ed9d79" text-anchor="end">↗</text>
+<text x="22" y="88" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#f3eee2" font-weight="bold" letter-spacing="-.7">VideoWithAi</text>
+<text x="22" y="119" font-family="Georgia,serif" font-size="14" fill="#b0b0a4" font-style="italic">A Next.js project.</text>
+<text x="22" y="143" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >TypeScript across the application.</text>
 </g>
-<path d="M22 166H443" stroke="#d5d5c8"/>
-<text x="22" y="192" font-family="Consolas,monospace" font-size="10" fill="#437161" >TypeScript</text>
-<text x="169" y="192" font-family="Consolas,monospace" font-size="9" fill="#686b61" >STARS 0 / FORKS 0</text>
-<text x="443" y="192" font-family="Consolas,monospace" font-size="9" fill="#686b61" text-anchor="end">2026-02-05</text>
+<path d="M22 166H443" stroke="#444940"/>
+<text x="22" y="192" font-family="Consolas,monospace" font-size="10" fill="#afc4af" >TypeScript</text>
+<text x="169" y="192" font-family="Consolas,monospace" font-size="9" fill="#b0b0a4" >STARS 0 / FORKS 0</text>
+<text x="443" y="192" font-family="Consolas,monospace" font-size="9" fill="#b0b0a4" text-anchor="end">2026-02-05</text>
 </svg>

@@ -1,20 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="266" viewBox="0 0 960 266" role="img"><title>About Ashif: fullstack developer, former frontend intern at Syntechxhub, mathematics graduate. Current focus is HireEdge.</title><style>@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:770px 194px;animation:spin 32s linear infinite}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}.enter{animation:in .8s ease-out both;animation-delay:var(--d,0s)}.float{animation:hover 6s ease-in-out infinite;animation-delay:var(--d,0s)}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect x=".5" y=".5" width="959" height="265" rx="2" fill="#f4f2e8" stroke="#d5d5c8"/>
-<text x="30" y="32" font-family="Consolas,monospace" font-size="10" fill="#c44928" >01</text>
-<text x="65" y="32" font-family="Consolas,monospace" font-size="10" fill="#686b61" >A SHORT INTRODUCTION</text>
-<path d="M30 47H930" stroke="#d5d5c8"/>
-<text x="30" y="102" font-family="Georgia,serif" font-size="35" fill="#222622" font-style="italic">I like making</text>
-<text x="30" y="145" font-family="Georgia,serif" font-size="35" fill="#222622" font-style="italic">things work.</text>
-<text x="345" y="87" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#222622" >I build responsive interfaces, connect APIs,</text>
-<text x="345" y="113" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#222622" >and turn AI ideas into usable web applications.</text>
-<text x="345" y="145" font-family="Consolas,monospace" font-size="12" fill="#686b61" >Currently building HireEdge, an AI interview-prep platform.</text>
-<text x="30" y="189" font-family="Consolas,monospace" font-size="9" fill="#c44928" >EXPERIENCE</text>
-<text x="30" y="216" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#222622" >Frontend Intern / Syntechxhub</text>
-<text x="30" y="240" font-family="Consolas,monospace" font-size="10" fill="#686b61" >Nov–Dec 2025</text>
-<text x="345" y="189" font-family="Consolas,monospace" font-size="9" fill="#c44928" >FOUNDATION</text>
-<text x="345" y="216" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#222622" >B.Sc. Mathematics</text>
-<text x="345" y="240" font-family="Consolas,monospace" font-size="10" fill="#686b61" >Ranchi University / 2021–2024</text>
-<text x="666" y="189" font-family="Consolas,monospace" font-size="9" fill="#c44928" >NEXT CHAPTER</text>
-<text x="666" y="216" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#222622" >Open to fullstack roles</text>
-<text x="666" y="240" font-family="Consolas,monospace" font-size="10" fill="#686b61" >Bengaluru + remote</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="266" viewBox="0 0 960 266" role="img"><title>About Ashif: fullstack developer, former frontend intern at Syntechxhub, mathematics graduate. Current focus is HireEdge.</title><style>@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes tilt{0%,100%{transform:translate(0,0) rotate(-2deg) scale(.99)}50%{transform:translate(-4px,-7px) rotate(2deg) scale(1.015)}}@keyframes sheen{0%,15%{transform:translateX(-450px);opacity:0}35%,55%{opacity:.7}80%,100%{transform:translateX(1100px);opacity:0}}@keyframes flow{to{stroke-dashoffset:-100}}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:.8}}.enter{animation:in .9s ease-out both;animation-delay:var(--d,0s)}.portrait{transform-origin:751px 239px;animation:tilt 9s ease-in-out infinite}.sheen{animation:sheen 12s ease-in-out infinite;pointer-events:none}.flow{stroke-dasharray:5 12;animation:flow 5s linear infinite}.pulse{animation:pulse 6s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}.sheen{display:none}}</style>
+<defs><linearGradient id="surface" x2="1" y2="1"><stop stop-color="#303b33"/><stop offset=".5" stop-color="#1b221e"/><stop offset="1" stop-color="#20201d"/></linearGradient><linearGradient id="edge" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".38"/><stop offset=".4" stop-color="#d3ddc9" stop-opacity=".05"/><stop offset="1" stop-color="#d3ddc9" stop-opacity=".22"/></linearGradient><linearGradient id="glass" x2=".7" y2="1"><stop stop-color="#ffffff" stop-opacity=".11"/><stop offset="1" stop-color="#ffffff" stop-opacity=".025"/></linearGradient><linearGradient id="shine"><stop stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".12"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient><radialGradient id="warm"><stop stop-color="#bf5d37" stop-opacity=".22"/><stop offset="1" stop-color="#bf5d37" stop-opacity="0"/></radialGradient><radialGradient id="sage"><stop stop-color="#9abca5" stop-opacity=".14"/><stop offset="1" stop-color="#9abca5" stop-opacity="0"/></radialGradient></defs>
+<defs><clipPath id="panel"><rect x="1" y="1" width="958" height="264" rx="26"/></clipPath></defs>
+<rect x=".5" y=".5" width="959" height="265" rx="26" fill="url(#surface)" stroke="url(#edge)"/>
+<g clip-path="url(#panel)"><ellipse cx="902.4" cy="34.58" rx="576.0" ry="239.4" fill="url(#warm)"/><ellipse cx="0" cy="266" rx="528.0" ry="266" fill="url(#sage)"/></g>
+<text x="30" y="32" font-family="Consolas,monospace" font-size="10" fill="#ed9d79" >01</text>
+<text x="65" y="32" font-family="Consolas,monospace" font-size="10" fill="#b0b0a4" >A SHORT INTRODUCTION</text>
+<path d="M30 47H930" stroke="#444940"/>
+<text x="30" y="102" font-family="Georgia,serif" font-size="35" fill="#f3eee2" font-style="italic">I like making</text>
+<text x="30" y="145" font-family="Georgia,serif" font-size="35" fill="#f3eee2" font-style="italic">things work.</text>
+<text x="345" y="87" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#f3eee2" >I build responsive interfaces, connect APIs,</text>
+<text x="345" y="113" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#f3eee2" >and turn AI ideas into usable web applications.</text>
+<text x="345" y="145" font-family="Consolas,monospace" font-size="12" fill="#b0b0a4" >Currently building HireEdge, an AI interview-prep platform.</text>
+<text x="30" y="189" font-family="Consolas,monospace" font-size="9" fill="#ed9d79" >EXPERIENCE</text>
+<text x="30" y="216" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#f3eee2" >Frontend Intern / Syntechxhub</text>
+<text x="30" y="240" font-family="Consolas,monospace" font-size="10" fill="#b0b0a4" >Nov–Dec 2025</text>
+<text x="345" y="189" font-family="Consolas,monospace" font-size="9" fill="#ed9d79" >FOUNDATION</text>
+<text x="345" y="216" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#f3eee2" >B.Sc. Mathematics</text>
+<text x="345" y="240" font-family="Consolas,monospace" font-size="10" fill="#b0b0a4" >Ranchi University / 2021–2024</text>
+<text x="666" y="189" font-family="Consolas,monospace" font-size="9" fill="#ed9d79" >NEXT CHAPTER</text>
+<text x="666" y="216" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#f3eee2" >Open to fullstack roles</text>
+<text x="666" y="240" font-family="Consolas,monospace" font-size="10" fill="#b0b0a4" >Bengaluru + remote</text>
 </svg>
