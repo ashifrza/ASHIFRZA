@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-29",
+  "as_of": "2026-09-30",
   "username": "ashifrza",
   "bio": "Full-Stack Dev & AI Engineer | React \u00b7 Node.js \u00b7 Python | Building HireEdge \ud83d\ude80 | Open to roles in Bengaluru & Remote.",
   "followers": 2,
@@ -8,6 +8,18 @@
   "stars": 0,
   "forks": 0,
   "repos": [
+    {
+      "name": "ASHIFRZA",
+      "description": null,
+      "html_url": "https://github.com/ashifrza/ASHIFRZA",
+      "homepage": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-29T12:49:36Z"
+    },
     {
       "name": "gushwork-landing",
       "description": "A landing Page.",
@@ -31,18 +43,6 @@
       "fork": false,
       "archived": false,
       "pushed_at": "2026-09-29T04:22:26Z"
-    },
-    {
-      "name": "ASHIFRZA",
-      "description": null,
-      "html_url": "https://github.com/ashifrza/ASHIFRZA",
-      "homepage": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-28T13:50:37Z"
     },
     {
       "name": "Clientora",
