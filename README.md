@@ -42,7 +42,7 @@ My current public GitHub bio lists **HireEdge**, an AI interview preparation pla
 
 <img src="./assets/contributions.svg" width="960" alt="Actual GitHub contributions with current and longest streaks in the displayed rolling window. Refreshed daily." />
 
-### Arcade
+##  Arcade
 
 <a href="https://ashifrza.github.io/ASHIFRZA/"><img src="./assets/arcade.svg" width="960" alt="Play Commit Dash: collect commits, dodge bugs, and survive 45 seconds. Click to open the game. Supports keyboard and touch." /></a>
 
