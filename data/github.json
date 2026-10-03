@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-03",
   "username": "ashifrza",
   "bio": "Full-Stack Dev & AI Engineer | React \u00b7 Node.js \u00b7 Python | Building HireEdge \ud83d\ude80 | Open to roles in Bengaluru & Remote.",
   "followers": 2,
@@ -8,6 +8,18 @@
   "stars": 0,
   "forks": 0,
   "repos": [
+    {
+      "name": "Only-Html-Css-Js-Projects",
+      "description": null,
+      "html_url": "https://github.com/ashifrza/Only-Html-Css-Js-Projects",
+      "homepage": null,
+      "language": "CSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-03T03:49:30Z"
+    },
     {
       "name": "ASHIFRZA",
       "description": null,
@@ -18,7 +30,7 @@
       "forks_count": 0,
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-02T02:17:50Z"
+      "pushed_at": "2026-10-02T12:31:02Z"
     },
     {
       "name": "gushwork-landing",
@@ -79,18 +91,6 @@
       "fork": false,
       "archived": false,
       "pushed_at": "2026-09-12T04:09:29Z"
-    },
-    {
-      "name": "Only-Html-Css-Js-Projects",
-      "description": null,
-      "html_url": "https://github.com/ashifrza/Only-Html-Css-Js-Projects",
-      "homepage": null,
-      "language": "CSS",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-11T04:42:02Z"
     },
     {
       "name": "transformer-maintenance-guide",
