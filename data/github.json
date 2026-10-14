@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-10-13",
+  "as_of": "2026-10-14",
   "username": "ashifrza",
   "bio": "Full-Stack Dev & AI Engineer | React \u00b7 Node.js \u00b7 Python | Building HireEdge \ud83d\ude80 | Open to roles in Bengaluru & Remote.",
   "followers": 2,
   "following": 3,
-  "public_repos": 8,
+  "public_repos": 9,
   "stars": 0,
   "forks": 0,
   "repos": [
@@ -18,7 +18,7 @@
       "forks_count": 0,
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-12T15:19:15Z"
+      "pushed_at": "2026-10-13T14:08:23Z"
     },
     {
       "name": "Only-Html-Css-Js-Projects",
@@ -93,6 +93,18 @@
       "pushed_at": "2026-09-12T04:09:29Z"
     },
     {
+      "name": "HireEdge",
+      "description": "AI-powered interview preparation platform built with React, Node.js, Express & MongoDB",
+      "html_url": "https://github.com/ashifrza/HireEdge",
+      "homepage": "https://hire-edge-mocha.vercel.app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-11T04:39:06Z"
+    },
+    {
       "name": "transformer-maintenance-guide",
       "description": "Practical transformer maintenance guide for technicians and beginners",
       "html_url": "https://github.com/ashifrza/transformer-maintenance-guide",
@@ -106,10 +118,11 @@
     }
   ],
   "language_bytes": {
+    "JavaScript": 370977,
     "TypeScript": 352495,
-    "JavaScript": 191294,
     "CSS": 99548,
-    "HTML": 26250,
+    "SCSS": 97156,
+    "HTML": 37042,
     "Python": 8131,
     "Dockerfile": 1263
   }
