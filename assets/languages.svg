@@ -7,24 +7,24 @@
 <text x="65" y="32" font-family="Consolas,monospace" font-size="10" fill="#b0b0a4" >THE CODE / PUBLIC REPOSITORIES</text>
 <path d="M30 47H930" stroke="#444940"/>
 <text x="30" y="82" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#f3eee2" font-weight="bold">A footprint in code.</text>
-<text x="930" y="79" font-family="Consolas,monospace" font-size="9" fill="#b0b0a4" text-anchor="end">SYNC 2026-10-19 UTC</text>
-<rect x="30.00" y="108" width="345.41" height="15" fill="#e49c79"/>
-<rect x="375.41" y="108" width="328.20" height="15" fill="#afc4af"/>
-<rect x="703.62" y="108" width="92.69" height="15" fill="#cfb277"/>
-<rect x="796.30" y="108" width="90.46" height="15" fill="#a2acbe"/>
-<rect x="886.76" y="108" width="34.49" height="15" fill="#c595a1"/>
-<rect x="921.25" y="108" width="7.57" height="15" fill="#888e83"/>
-<rect x="928.82" y="108" width="1.18" height="15" fill="#e49c79"/>
+<text x="930" y="79" font-family="Consolas,monospace" font-size="9" fill="#b0b0a4" text-anchor="end">SYNC 2026-10-20 UTC</text>
+<rect x="30.00" y="108" width="367.33" height="15" fill="#e49c79"/>
+<rect x="397.33" y="108" width="305.02" height="15" fill="#afc4af"/>
+<rect x="702.36" y="108" width="96.77" height="15" fill="#cfb277"/>
+<rect x="799.12" y="108" width="84.07" height="15" fill="#a2acbe"/>
+<rect x="883.20" y="108" width="38.68" height="15" fill="#c595a1"/>
+<rect x="921.87" y="108" width="7.04" height="15" fill="#888e83"/>
+<rect x="928.91" y="108" width="1.09" height="15" fill="#e49c79"/>
 <circle cx="33" cy="149" r="3" fill="#e49c79"/>
-<text x="45" y="153" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >JavaScript  38.4%</text>
+<text x="45" y="153" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >JavaScript  40.8%</text>
 <circle cx="336" cy="149" r="3" fill="#afc4af"/>
-<text x="348" y="153" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >TypeScript  36.5%</text>
+<text x="348" y="153" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >TypeScript  33.9%</text>
 <circle cx="639" cy="149" r="3" fill="#cfb277"/>
-<text x="651" y="153" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >CSS  10.3%</text>
+<text x="651" y="153" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >CSS  10.8%</text>
 <circle cx="33" cy="174" r="3" fill="#a2acbe"/>
-<text x="45" y="178" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >SCSS  10.1%</text>
+<text x="45" y="178" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >SCSS  9.3%</text>
 <circle cx="336" cy="174" r="3" fill="#c595a1"/>
-<text x="348" y="178" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >HTML  3.8%</text>
+<text x="348" y="178" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >HTML  4.3%</text>
 <circle cx="639" cy="174" r="3" fill="#888e83"/>
 <text x="651" y="178" font-family="Consolas,monospace" font-size="11" fill="#b0b0a4" >Python  0.8%</text>
 <circle cx="33" cy="199" r="3" fill="#e49c79"/>

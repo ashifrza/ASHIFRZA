@@ -1,13 +1,25 @@
 {
-  "as_of": "2026-10-19",
+  "as_of": "2026-10-20",
   "username": "ashifrza",
   "bio": "Full-Stack Dev & AI Engineer | React \u00b7 Node.js \u00b7 Python | Building HireEdge \ud83d\ude80 | Open to roles in Bengaluru & Remote.",
   "followers": 1,
   "following": 4,
-  "public_repos": 9,
+  "public_repos": 10,
   "stars": 0,
   "forks": 0,
   "repos": [
+    {
+      "name": "readmeStudio",
+      "description": null,
+      "html_url": "https://github.com/ashifrza/readmeStudio",
+      "homepage": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-19T15:48:04Z"
+    },
     {
       "name": "ASHIFRZA",
       "description": null,
@@ -18,7 +30,7 @@
       "forks_count": 0,
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-18T11:00:58Z"
+      "pushed_at": "2026-10-19T13:09:09Z"
     },
     {
       "name": "Only-Html-Css-Js-Projects",
@@ -118,11 +130,11 @@
     }
   ],
   "language_bytes": {
-    "JavaScript": 370977,
+    "JavaScript": 424503,
     "TypeScript": 352495,
-    "CSS": 99548,
+    "CSS": 111827,
     "SCSS": 97156,
-    "HTML": 37042,
+    "HTML": 44695,
     "Python": 8131,
     "Dockerfile": 1263
   }
