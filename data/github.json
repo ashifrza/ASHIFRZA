@@ -1,13 +1,25 @@
 {
-  "as_of": "2026-10-20",
+  "as_of": "2026-10-21",
   "username": "ashifrza",
   "bio": "Full-Stack Dev & AI Engineer | React \u00b7 Node.js \u00b7 Python | Building HireEdge \ud83d\ude80 | Open to roles in Bengaluru & Remote.",
-  "followers": 1,
+  "followers": 2,
   "following": 4,
   "public_repos": 10,
   "stars": 0,
   "forks": 0,
   "repos": [
+    {
+      "name": "ASHIFRZA",
+      "description": null,
+      "html_url": "https://github.com/ashifrza/ASHIFRZA",
+      "homepage": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-20T11:32:45Z"
+    },
     {
       "name": "readmeStudio",
       "description": null,
@@ -19,18 +31,6 @@
       "fork": false,
       "archived": false,
       "pushed_at": "2026-10-19T15:48:04Z"
-    },
-    {
-      "name": "ASHIFRZA",
-      "description": null,
-      "html_url": "https://github.com/ashifrza/ASHIFRZA",
-      "homepage": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-19T13:09:09Z"
     },
     {
       "name": "Only-Html-Css-Js-Projects",
